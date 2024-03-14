@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image:radial-gradient(600px, #1F40BA, #182060, #0E1628);
+    color: white;
+  }
+  
+  .cabecalho__projetos {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_projetos {
+    margin: 12px 0 0 188px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    gap: 15px;
+  }
+
+  .nav_projetos > a {
+    text-decoration: none;
+    font-size: 25px;
+    border: #a63ee1 solid;
+    border-style: groove;
+    padding: 15px;
+    border-radius: 35px;
+  }
+  
+
+  
+  .cabecalho__projetos a:hover {
+    background-color: #1f40ba;
+    color: aliceblue;
+    scale: 1.25;
+    transition: .50s;
+  }
+
+  
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    padding: 50px;
+    animation-name: animacao__h1;
+    animation-duration: 1s;
+    color: #a63ee1
+  }
+
+  @keyframes animacao__h1 {
+    0%{
+        margin-right:-350px;
+        opacity:0%;
+    }
+    100%{
+        margin-right:0 px;
+        opacity: 100%;
+    }
+}
+
+  .container_about{
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    flex-direction:row;
+    /* border: red solid; */
+  }
+
+
+
+  .texto{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: row;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    animation-name: animacao__texto;
+    animation-duration: 1.5s;
+    /* border: red solid; */
+  }
+
+    @keyframes animacao__texto {
+        0%{
+            scale:0%;
+            opacity:0%;
+        }
+        100%{
+            scale: 100%;
+            opacity: 90%;
+        }
+
+  }
+
+   .foto{
+    width: fit-content;
+    height: fit-content;
+    /* border: red solid; */
+    width: 500px;
+    animation-name: animacao__foto;
+    animation-duration: 1.5s;
+   }
+
+   @keyframes animacao__foto {
+    0%{
+        scale:0%;
+        opacity:0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 100%;
+    }
+    
+   }
+
+
+  .rodape {
+    display: flex;
+    color: #ffffff;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background-color: #250d69;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 25px;
+    animation-name: animacao__rodape ;
+    animation-duration: 1s;
+    
+}
+
+@keyframes animacao__rodape {
+
+    0%{
+        opacity: 0%;
+        margin-left: -180vh;
+    }
+    80%{
+        opacity: 0%;
+        margin-left: 180vh;
+    }
+    100%{
+        opacity:100% ;
+        margin-left: 0vh;
+    }
+}

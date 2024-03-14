@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    font-family:"Raleway", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 55px;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    animation-name: animacao__cabecalho;
+    animation-duration: 2s;
+    /* border: 1px solid red; */
+}
+
+@keyframes animacao__cabecalho {
+    0%{
+        opacity: 0%;
+        margin-top: 0vh;
+    }
+    80%{
+        opacity: 0%;
+        margin-top: -5vh;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0vh;
+    }
+    
+}
+
+.cabecalho>a {
+    text-decoration: none;
+    font-size: 25px;
+    border: #A63EE1 solid;
+    border-style:groove;
+    padding: 15px;
+    border-radius: 35px;
+
+}
+
+.cabecalho a:hover {
+    background-color:#1F40BA
+    
+}
+
+A:visited {
+    color: aliceblue;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image:radial-gradient(600px, #1F40BA, #182060, #0E1628);
+    color: white;
+}
+
+.apresentacao {
+    margin: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+
+}
+
+.aprensentacao__conteudo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid red; */
+}
+
+.apresentacao__conteudo___titulo {
+    margin-top: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 220px;
+    animation-name: animacao__titulo;
+    
+    animation-duration: 2s;
+}
+
+@keyframes animacao__titulo {
+        0%{
+
+            opacity: 0%;
+            scale: 0%;
+        }
+        80%{
+            opacity:0%;
+            scale: 120%;
+        }
+        100%{
+            opacity: 100%;
+            scale:100%;
+        }
+    
+}
+
+.aprensentacao__conteudo__texto {
+    margin: 2%;
+    font-family: "Raleway", sans-serif;
+    font-weight:lighter;
+    font-size: 45px;
+    animation-name: animacao__conteudo__texto;
+    animation-duration: 3s;
+}
+
+@keyframes animacao__conteudo__texto {
+    0%{
+        scale: 0%;
+    }
+    80%{
+        scale: 120%;
+    }
+    100%{
+        scale:100%
+    }
+
+}
+
+
+.aprensentacao__links {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    justify-items: center;
+    width: 350px;
+    background-image:linear-gradient( #A63EE1,#250D69);
+    border: #250D69 solid;
+    padding: 2%;
+    border-radius: 35px;
+    text-decoration: none;
+    transition: 2.5s;
+}
+
+a:hover{
+    background-image:linear-gradient( #250D69,#A63EE1);
+    transition: .50s;
+    color: #000;
+    scale: 1.25;
+}
+
+.imagem_robo {
+    position: relative;
+    width: 100%;
+    background-color: #A63EE1;
+    border-radius: 150px;
+    box-shadow: 2px 2px 15px #000;
+    animation: Robo_subindo 1.5s normal;
+
+}
+
+.imagem_robo:hover{
+
+    transition: .50s;
+    scale: 1.25;
+}
+
+@keyframes Robo_subindo {
+    0%{
+        opacity: 0%;
+        bottom: -55vh;
+    }
+    50%{
+        bottom:5vh;
+        opacity: 100%;
+    }
+    100%{
+        bottom: 0vh;
+    }
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #250D69;
+    font-family:"Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 15px;
+    animation: animacao__rodape 1.5s ;
+}
+
+@keyframes animacao__rodape {
+
+    0%{
+        opacity: 0%;
+        margin-left: -180vh;
+    }
+    80%{
+        opacity: 0%;
+        margin-left: 180vh;
+    }
+    100%{
+        opacity:100% ;
+        margin-left: 0vh;
+    }
+    
+}

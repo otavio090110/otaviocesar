@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  background-image:radial-gradient(600px, #1F40BA, #182060, #0E1628);
+  color: white;
+}
+
+.cabecalho__projetos {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  animation-name: animacao__cabecalho__projetos;
+  animation-duration: .95s;
+}
+
+@keyframes animacao__cabecalho__projetos {
+
+  0%{
+    opacity: 0%;
+    margin-left: -350px;
+  }
+  100%{
+    opacity: 100%;
+    margin-left: 0px;
+  }
+  
+}
+
+.nav_projetos {
+  margin: 12px 0 0 188px;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  gap: 15px;
+}
+
+.nav_projetos > a {
+  text-decoration: none;
+  font-size: 25px;
+  border: #a63ee1 solid;
+  border-style: groove;
+  padding: 15px;
+  border-radius: 35px;
+}
+
+.cabecalho__projetos a:hover {
+  background-color: #1f40ba;
+  color: aliceblue;
+  scale: 1.25;
+  transition: .50s;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  padding: 50px;
+  color: #a63ee1;
+  animation-name: animacao__h1;
+  animation-duration: 1s;
+}
+
+@keyframes animacao__h1 {
+
+  0%{
+    scale:0%;
+    opacity:0%;
+  }
+  100%{
+    scale: 100%;
+    opacity: 100%;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+nav > a {
+  text-decoration: none;
+}
+
+.container__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container__cards > img {
+  height: 500px;
+  width: 500px;
+  border-radius: 35px;
+  animation-name: animacao__img;
+  animation-duration: 2s;
+  
+}
+
+@keyframes animacao__img {
+
+  0%{
+    scale:0%;
+    opacity:0%;
+  }
+  100%{
+    scale: 100%;
+    opacity: 100%;
+  }
+  
+}
+
+.container__cards:hover{
+  scale: 1.05;
+  transition: .50s;
+  padding: 20px;
+  border: 10px solid #A43EE7;
+  border-radius: 35px;
+  
+}
+.container__cards > h3 {
+  text-align: center;
+  font-size: 35px;
+  background-image:radial-gradient(#A43EE7, #E93C80 );
+  border-radius: 45px;
+  padding: 15px;
+  font-family: "Raleway", sans-serif;
+  animation-name: animacao__areas;
+  animation-duration: 1s;
+}
+
+@keyframes animacao__areas {
+  0%{
+    scale: 0%;
+    opacity: 0%;
+  }
+  80%{
+    scale: 110%;
+    opacity: 50%;
+    }
+  100%{
+    scale: 100%;
+    opacity: 100%;
+  }
+  
+}
+
+.rodape {
+  display: flex;
+  color: #ffffff;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  background-color: #250d69;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  padding: 15px 0 50px 0;
+  animation-name: animacao__rodape;
+  animation-duration: 1s;
+}
+
+@keyframes animacao__rodape {
+
+  0%{
+      opacity: 0%;
+      margin-left: -180vh;
+  }
+  80%{
+      opacity: 0%;
+      margin-left: 180vh;
+  }
+  100%{
+      opacity:100% ;
+      margin-left: 0vh;
+  }
+}
